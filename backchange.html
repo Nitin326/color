@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1 shrink-to-fit-no">
+	<title>Background Changer</title>
+	<link rel="stylesheet" type="text/css" href="ram.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+
+    <script>
+
+    	function colorchange(id) {
+    	     document.body.style.background = document.getElementById(id).innerHTML
+    	}
+
+    </script>
+
+    <style>
+    	
+body{
+    		margin: 0px;
+            padding: 0px;
+            background: black;
+             background: rgba(68,58,58,0.3);
+    	}
+
+    	.box{
+    		background-color: #d87979;
+            width: auto;
+            padding: 5px;
+    		height: auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+    	.box a{
+    		float: left;
+    		width: 35px;
+    		height: 25px;
+    		text-decoration: none;
+    		margin: 10px;
+    		cursor: pointer;
+    		text-indent: -99999px;
+            display: block;
+    	}
+    	#red{
+    		background-color:red ;
+    	}
+    	#blue{
+    		background-color: blue;
+    	}
+    	#green{
+    		background-color:green ;
+    	}
+    	#yellow{
+    		background-color:yellow ;
+    	}
+    	#white{
+    		background-color:white ;
+    	}
+    	#orange{
+    		background-color:orange ;
+    	}
+    	#pink{
+    		background-color:pink ;
+    	}
+    	#skyblue{
+    		background-color: skyblue;
+    	}
+h1{
+    color: linear-gradient(red, yellow, green);
+     display: flex;
+     text-align: center;
+     justify-content: center;
+     font-family: 'Ranchers', cursive;
+     font-size: 40px;
+    margin-top: 150px;
+}
+
+h5{
+     color: -linear-gradient(#166669, #bccfd0, #3a1b40);
+     text-align: center;
+     font-family: 'Ranchers', cursive;
+     font-size: 25px;
+     margin-top: 10px;
+}
+
+footer{
+	text-align: center;
+	margin-top: 450px;
+}
+
+    </style>
+
+</head>
+<body>
+<div class="container">
+<div class="box">
+	
+	<a onclick="colorchange('red')" id="red">red</a>
+    <a onclick="colorchange('blue')" id="blue">blue</a>
+    <a onclick="colorchange('green')" id="green">green</a>
+    <a onclick="colorchange('yellow')" id="yellow">yellow</a>
+    <a onclick="colorchange('white')" id="white">white</a>
+    <a onclick="colorchange('orange')" id="orange">orange</a>
+    <a onclick="colorchange('pink')" id="pink">pink</a>
+    <a onclick="colorchange('skyblue')" id="skyblue">skyblue</a>
+
+</div>
+</div>
+<h1>BACKGROUND CHANGER</h1>
+<h5>press on any color</h5>
+<footer><b> &copy;2020 |  nitin sain</b></footer>
+
+</body>
+</html>
